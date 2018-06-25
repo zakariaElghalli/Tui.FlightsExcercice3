@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReading", "FileReading.Core\FileReading.csproj", "{28163181-71DD-4874-AB3C-FA0DCA081EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReading.Tests", "FileReading.Tests\FileReading.Tests.csproj", "{C5301910-E37D-489E-8C37-842E41AE064C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28163181-71DD-4874-AB3C-FA0DCA081EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28163181-71DD-4874-AB3C-FA0DCA081EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28163181-71DD-4874-AB3C-FA0DCA081EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28163181-71DD-4874-AB3C-FA0DCA081EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5301910-E37D-489E-8C37-842E41AE064C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5301910-E37D-489E-8C37-842E41AE064C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5301910-E37D-489E-8C37-842E41AE064C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5301910-E37D-489E-8C37-842E41AE064C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7274B480-37F3-4716-B5C3-D443E524C703}
+	EndGlobalSection
+EndGlobal
