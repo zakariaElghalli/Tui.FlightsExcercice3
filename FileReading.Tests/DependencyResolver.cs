@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Unity;
 
 namespace FileReading.Tests
@@ -18,7 +19,9 @@ namespace FileReading.Tests
 
         public static void RegisterTypes(IUnityContainer container)
         {
-            container.RegisterType<IFileReading, ReadTextFile>();
+            container.RegisterType<IFileReading, ReadTextFile>("txt");
+            container.RegisterType<IFileReading, ReadXmlFile>("xml");
+            container.RegisterType<IEnumerable<IFileReading>, IFileReading[]>();
         }
     }
 }

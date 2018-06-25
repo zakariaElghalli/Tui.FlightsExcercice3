@@ -5,12 +5,12 @@ namespace FileReading.Tests
     [TestClass]
     public class FileReadingTest
     {
-        IFileReading fileReading;
+        ReadFileBuilder readFileBuilder;
 
         [TestInitialize]
         public void Initialize()
         {
-            fileReading = DependencyResolver.Resolve<IFileReading>();
+            readFileBuilder = DependencyResolver.Resolve<ReadFileBuilder>();
         }
 
         [TestMethod]
@@ -19,9 +19,20 @@ namespace FileReading.Tests
             // Arrange
             var filePath = "test.txt";
             // Act
-            var readTextFileResult = fileReading.Read(filePath);
+            var readTextFileResult = readFileBuilder.ReadFile(filePath);
             // Assert
             Assert.AreEqual("Text file reading....", readTextFileResult);
         }
+        [TestMethod]
+        public void Read_XmlFile_Test()
+        {
+            // Arrange
+            var filePath = "test.xml";
+            // Act
+            var readTextFileResult = readFileBuilder.ReadFile(filePath);
+            // Assert
+            Assert.AreEqual("Xml file reading....", readTextFileResult);
+        }
+
     }
 }

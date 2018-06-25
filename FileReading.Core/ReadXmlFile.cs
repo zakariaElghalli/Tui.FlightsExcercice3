@@ -3,17 +3,17 @@ using System.IO;
 
 namespace FileReading
 {
-    public class ReadTextFile 
+    public class ReadXmlFile
         : IFileReading
     {
         public bool IsMatch(string filePath)
         {
-            return Path.GetExtension(filePath).Equals(".txt", StringComparison.CurrentCultureIgnoreCase);
+            return Path.GetExtension(filePath).Equals(".xml", StringComparison.CurrentCultureIgnoreCase);
         }
 
         public string Read(string filePath)
         {
-            return "Text file reading....";
+            return "Xml file reading....";
         }
     }
 }

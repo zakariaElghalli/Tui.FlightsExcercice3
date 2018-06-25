@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IFileReading.cs" />
+    <Compile Include="ReadFileBuilder.cs" />
     <Compile Include="ReadTextFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadXmlFile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

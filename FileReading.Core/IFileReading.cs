@@ -2,6 +2,7 @@
 {
     public interface IFileReading
     {
-        string Read(string filePath);
+        bool IsMatch(string filePath);
+        string Read(string filePath);       
     }
 }
